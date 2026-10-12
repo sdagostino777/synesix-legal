@@ -1,4 +1,4 @@
-# Pagine legali di Aequor — come pubblicarle
+# Pagine legali di Synesix — come pubblicarle
 
 Questa cartella contiene le pagine legali dell'app, in HTML statico. Non hanno risorse
 esterne — un solo `style.css` accanto — quindi si aprono anche da `file://` e si possono
@@ -39,21 +39,21 @@ dello stesso sviluppatore: non rimuoverlo.
 ## Dove pubblicarle: GitHub Pages
 
 È il modo già collaudato sull'altra app dello stesso sviluppatore, che ha un repository
-dedicato alle sole pagine legali. Per Aequor si fa la stessa cosa, con un repository
+dedicato alle sole pagine legali. Per Synesix si fa la stessa cosa, con un repository
 separato — così le pagine legali hanno una storia di modifiche propria e non si mescolano
 al codice dell'app.
 
-1. Crea un repository **pubblico** chiamato `aequor-legal` sull'account GitHub dello
+1. Crea un repository **pubblico** chiamato `synesix-legal` sull'account GitHub dello
    sviluppatore (`sdagostino777`).
 2. Da questa cartella:
 
    ```bash
-   cd /Users/simonedagostino/Documents/DeepSeek/APP/Aequor/Store/legal
+   cd /Users/simonedagostino/Documents/DeepSeek/APP/Synesix/Store/legal
    git init
    git add .
-   git commit -m "Pagine legali di Aequor"
+   git commit -m "Pagine legali di Synesix"
    git branch -M main
-   git remote add origin https://github.com/sdagostino777/aequor-legal.git
+   git remote add origin https://github.com/sdagostino777/synesix-legal.git
    git push -u origin main
    ```
 
@@ -62,9 +62,9 @@ al codice dell'app.
 4. Gli indirizzi diventano:
 
    ```
-   https://sdagostino777.github.io/aequor-legal/            → index.html (italiano)
-   https://sdagostino777.github.io/aequor-legal/privacy.html
-   https://sdagostino777.github.io/aequor-legal/privacy.en.html
+   https://sdagostino777.github.io/synesix-legal/            → index.html (italiano)
+   https://sdagostino777.github.io/synesix-legal/privacy.html
+   https://sdagostino777.github.io/synesix-legal/privacy.en.html
    ```
 
    e così via per le altre lingue.
@@ -113,7 +113,7 @@ non c'è niente da pagare.
 
 ## Una differenza da Emycra, e va tenuta presente
 
-Le pagine di Aequor nominano **un solo numero di emergenza**, non un elenco di linee di
+Le pagine di Synesix nominano **un solo numero di emergenza**, non un elenco di linee di
 ascolto. È una decisione di Simon del 9 ottobre 2026, spiegata in `CrisisProtocol.swift` e
 in `../SPECIFICHE.md` §3.1-bis: l'app non tiene un registro di linee di ascolto, perché
 cambiano numero, gestore e orari, e un numero verificato una volta e mai più ricontrollato
