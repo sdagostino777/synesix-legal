@@ -29,10 +29,18 @@ Ogni pagina ha in fondo il collegamento alle altre tre della **stessa lingua** e
 lingue alternative: chi arriva dalla scheda tedesca resta in tedesco.
 
 **Il link all'EULA di Apple** (`https://www.apple.com/legal/internet-services/itunes/dev/stdeula/`)
-sta nella sezione 7 dei *termini* di tutte e cinque le lingue. Non è decorativo: la stessa
+sta nella sezione 11 dei *termini* di tutte e cinque le lingue. Non è decorativo: la stessa
 voce deve comparire **anche nella Descrizione** della scheda App Store, altrimenti la
 revisione si ferma (linea guida 3.1.2). È il rifiuto già preso una volta su un'altra app
 dello stesso sviluppatore: non rimuoverlo.
+
+**I prezzi e il rinnovo** stanno nella sezione 7 dei *termini*, in tutte e cinque le lingue.
+Dal 13 ottobre 2026 il PRO ha **due** prodotti, non più uno: l'acquisto una volta sola
+(69,99 €) e l'abbonamento annuale con rinnovo automatico (24,99 € all'anno). La sezione 6
+dice che il piano gratuito non ha limiti e non scade e che tutti i valori si vedono sempre;
+la sezione 7 dice prezzi, rinnovo, disdetta e rimborsi. Se cambia uno dei due prezzi, o la
+periodicità, vanno aggiornate **cinque** pagine (`terms.*`), più le due voci in `index.*`
+che rimandano ai termini.
 
 ---
 
@@ -104,6 +112,14 @@ non c'è niente da pagare.
   condizioni d'uso, non in una pagina di indice.
 - L'email di contatto è `dagostino.simone@icloud.com`: è quella che risponde, e deve
   restare valida per tutto il tempo in cui l'app è in vendita.
+- I due prezzi nelle pagine — **69,99 € una volta sola** (`com.dagostinosimone.synesix.premium.lifetime`)
+  e **24,99 € all'anno** (`com.dagostinosimone.synesix.premium.annual`) — e la frase sul rinnovo
+  automatico con disdetta **almeno 24 ore prima** devono restare identici ai prezzi configurati
+  in App Store Connect e alla Descrizione della scheda: la linea guida 3.1.2 confronta le tre
+  cose, e un prezzo diverso fra pagina e scheda è un rifiuto. Le pagine dicono che i prezzi sono
+  IVA inclusa e che possono cambiare per i nuovi acquisti; per gli abbonamenti in corso valgono
+  le regole di Apple sulla comunicazione delle variazioni di prezzo. Se un prezzo cambia, si
+  aggiornano **cinque** pagine (`terms.*`), non venti.
 - I termini dicono che l'app **non è un dispositivo medico**, che i dati restano sul
   dispositivo e che l'app **non fa richieste di rete**: se un giorno il comportamento
   dell'app cambia, queste pagine vanno riscritte **prima** di pubblicare la versione
